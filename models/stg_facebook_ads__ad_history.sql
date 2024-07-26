@@ -1,4 +1,12 @@
-{{ config(enabled=var('ad_reporting__facebook_ads_enabled', True)) }}
+{{ config(enabled=var('ad_reporting__facebook_ads_enabled', True),
+    unique_key = ['source_relation','ad_id','updated_at'],
+    partition_by={
+      "field": "updated_at", 
+      "data_type": "TIMESTAMP",
+      "granularity": "day"
+    }
+    ) }}
+
 
 with base as (
 
