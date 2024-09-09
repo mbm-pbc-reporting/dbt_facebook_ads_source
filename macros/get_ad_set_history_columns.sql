@@ -11,7 +11,8 @@
     {"name": "bid_strategy", "datatype": dbt.type_string()},
     {"name": "daily_budget", "datatype": dbt.type_int()},
     {"name": "budget_remaining", "datatype": dbt.type_int()},
-    {"name": "status", "datatype": dbt.type_string()}
+    {"name": "status", "datatype": dbt.type_string()},
+    {"name": "targeting_publisher_platforms", "datatype": dbt.type_string()}
 ] %}
 
 {{ return(columns) }}
