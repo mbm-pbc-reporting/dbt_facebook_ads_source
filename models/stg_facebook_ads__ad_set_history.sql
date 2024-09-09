@@ -46,6 +46,7 @@ final as (
         bid_strategy,
         daily_budget,
         budget_remaining,
+        targeting_publisher_platforms,
         status,
         case when id is null and updated_time is null
             then row_number() over (partition by source_relation order by source_relation)
