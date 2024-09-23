@@ -50,6 +50,7 @@ final as (
         object_story_link_data_description, 
         object_story_link_data_link, 
         object_story_link_data_message,
+        object_type,
         template_app_link_spec_ios,
         template_app_link_spec_ipad,
         template_app_link_spec_android,
