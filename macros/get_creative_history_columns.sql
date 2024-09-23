@@ -18,7 +18,9 @@
     {"name": "template_app_link_spec_android", "datatype": dbt.type_string()},
     {"name": "template_app_link_spec_ios", "datatype": dbt.type_string()},
     {"name": "template_app_link_spec_ipad", "datatype": dbt.type_string()},
-    {"name": "template_app_link_spec_iphone", "datatype": dbt.type_string()}
+    {"name": "template_app_link_spec_iphone", "datatype": dbt.type_string()},
+    {"name": "object_type", "datatype": dbt.type_string()}
+        
 ] %}
 
 {{ return(columns) }}
